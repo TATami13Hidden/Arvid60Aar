@@ -1,10 +1,11 @@
 <script setup>
 import Button from 'primevue/button';
 
-let rand = Math.floor(Math.random() * 8 + 1);
+const maxNumber = 8;
+let rand = Math.floor(Math.random() * maxNumber + 1);
 let rand1 = 0;
 while (rand1 === rand || rand1 === 0) {
-  rand1 = Math.floor(Math.random() * 8 + 1);
+  rand1 = Math.floor(Math.random() * maxNumber + 1);
 }
 
 </script>
